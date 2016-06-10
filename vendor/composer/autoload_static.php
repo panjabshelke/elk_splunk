@@ -23,6 +23,10 @@ class ComposerStaticInit881722bc1b7e37be2e940a6043157b09
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
+        'i' => 
+        array (
+            'index0h\\log\\' => 12,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -65,6 +69,10 @@ class ComposerStaticInit881722bc1b7e37be2e940a6043157b09
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
+        ),
+        'index0h\\log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/index0h/yii2-log/src',
         ),
         'cebe\\markdown\\' => 
         array (

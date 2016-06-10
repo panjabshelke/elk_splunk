@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "479407875c975e7dbee0aefcb85e62d5",
-    "content-hash": "5c27dd23827e5c153817a7f3f5d227c6",
+    "hash": "b1e81200ebd46d3b6b06b7a502a06335",
+    "content-hash": "26afecfdda8011bf3a664154ecc4f365",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -298,6 +298,65 @@
                 "html"
             ],
             "time": "2015-08-05 01:03:42"
+        },
+        {
+            "name": "index0h/yii2-log",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/index0h/yii2-log.git",
+                "reference": "a470a913e953a190880ced04ddfa13fe2ecc4811"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/index0h/yii2-log/zipball/a470a913e953a190880ced04ddfa13fe2ecc4811",
+                "reference": "a470a913e953a190880ced04ddfa13fe2ecc4811",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "2.0.*",
+                "yiisoft/yii2-composer": "2.0.*"
+            },
+            "require-dev": {
+                "codeception/codeception": "2.0.*",
+                "yiisoft/yii2-elasticsearch": "2.0.*",
+                "yiisoft/yii2-redis": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "writable": [
+                    "tests/_runtime",
+                    "tests/_log"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "index0h\\log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Levishchenko",
+                    "email": "index.0h@gmail.com"
+                }
+            ],
+            "description": "Many Yii2 log targets",
+            "homepage": "https://github.com/index0h/yii2-log",
+            "keywords": [
+                "elasticsearch",
+                "log",
+                "log-target",
+                "logstash",
+                "redis",
+                "yii2",
+                "yii2-log"
+            ],
+            "time": "2015-05-24 22:32:44"
         },
         {
             "name": "swiftmailer/swiftmailer",
