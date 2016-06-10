@@ -25,7 +25,12 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
+    
+    
     <?php
+    
+    
+    
     NavBar::begin([
         'brandLabel' => 'My Company',
         'brandUrl' => Yii::$app->homeUrl,
@@ -36,6 +41,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
+            ['label' => 'Elastic', 'url' => ['site/elastic']],
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Logstash', 'url' => ['/site/logstash_demo']],
 //            ['label' => 'About', 'url' => ['/site/about']],
@@ -54,6 +60,7 @@ AppAsset::register($this);
 //            )
         ],
     ]);
+    //print_r(Yii::$app->language);die();
     NavBar::end();
     ?>
 
