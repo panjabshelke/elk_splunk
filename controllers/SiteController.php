@@ -91,4 +91,8 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+    public function actionLogstash_demo()
+    {
+        return $this->render('logstash_demo');
+    }
 }
