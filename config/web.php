@@ -41,7 +41,9 @@ $config = [
                 [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
+                    
                 ],
+               // ['class' => 'index0h\\log\\LogstashTarget'],
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
