@@ -1,12 +1,19 @@
 <?php
 
 $params = require(__DIR__ . '/params.php');
+$modules = require(__DIR__ . '/module.php');
 
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+//        'urlManager' => [
+//            'baseUrl' => '/',
+//            'enablePrettyUrl' => true,
+//            'showScriptName' => false,
+//            'rules' => []
+//        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'sQ0GreDhX4PpqJmbGExZKEYzRsjMR5Jf',
@@ -56,6 +63,7 @@ $config = [
         ],
     ],
     'params' => $params,
+    'modules' =>$modules,
     
 ];
 
