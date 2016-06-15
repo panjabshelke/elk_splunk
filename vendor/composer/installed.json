@@ -980,6 +980,7 @@
         ]
     },
     {
+<<<<<<< HEAD
         "name": "index0h/yii2-log",
         "version": "0.0.3",
         "version_normalized": "0.0.3.0",
@@ -1041,6 +1042,8 @@
         ]
     },
     {
+=======
+>>>>>>> e40366a3a519f01859103f84ae64139014817b95
         "name": "react/promise",
         "version": "v2.4.1",
         "version_normalized": "2.4.1.0",

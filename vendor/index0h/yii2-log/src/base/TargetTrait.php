@@ -134,7 +134,10 @@ trait TargetTrait
      */
     protected function prepareMessage($message)
     {
+<<<<<<< HEAD
         print_r($message);die;
+=======
+>>>>>>> e40366a3a519f01859103f84ae64139014817b95
         list($text, $level, $category, $timestamp) = $message;
 
         $level = Logger::getLevelName($level);
