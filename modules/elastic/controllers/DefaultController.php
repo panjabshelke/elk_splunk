@@ -83,10 +83,10 @@ public function actionSearch(){
 //    $model = new Logs();  
 //      $dataprovider = $model->search('1');
    
-      $messages = "warnning";
-      $final = 1;
-   $result = $data->collect($messages, $final);
-      print_r($result);
+//      $messages = "warnning";
+//      $final = 1;
+//   $result = $data->collect($messages, $final);
+      print_r($data);
       die();
    //$data->collect($messages, $final);
    
