@@ -34,29 +34,28 @@ $config = [
                 [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
-                ],
             ],
+        ],
         ],
         'db' => require(__DIR__ . '/db.php'),
 //        'module' => require(__DIR__ . '/module.php'),
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+//        'urlManager' => [
+//            'showScriptName' => false,
+//            'enablePrettyUrl' => true,
+//            'enableStrictParsing' => false,
+//            'rules' => [
+//                '<controller>/<action>/<id:w+>' => '<controller>/<action>'
+//            ],
+//        ],
         'elasticsearch' => [
             'class' => 'yii\elasticsearch\Connection',
             'nodes' => [
                 ['http_address' => '127.0.0.1:9200'],
-                // configure more hosts if you have a cluster
+            // configure more hosts if you have a cluster
             ],
         ],
     ],
     'params' => $params,
-    
 ];
 
 if (YII_ENV_DEV) {
