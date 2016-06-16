@@ -43,6 +43,7 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Elastic', 'url' => ['elastic/default/index']],
             ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Logstash', 'url' => ['/site/logstash_demo']],
 //            ['label' => 'About', 'url' => ['/site/about']],
 //            ['label' => 'Contact', 'url' => ['/site/contact']],
 //            Yii::$app->user->isGuest ? (

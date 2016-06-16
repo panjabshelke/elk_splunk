@@ -57,6 +57,13 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'index0h/yii2-log' => 
+  array (
+    'name' => 'index0h/yii2-log',
+    'version' => '0.0.3.0',
+    'alias' => 
+    array (
+      '@index0h/log' => $vendorDir . '/index0h/yii2-log/src',
   'yiisoft/yii2-elasticsearch' => 
   array (
     'name' => 'yiisoft/yii2-elasticsearch',

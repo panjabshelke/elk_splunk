@@ -18,6 +18,7 @@
         "yiisoft/yii2": ">=2.0.5",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
+        "index0h/yii2-log": "0.0.3",
         "yiisoft/yii2-elasticsearch": "^2.0",
         "elasticsearch/elasticsearch": "~2.0",
         "index0h/yii2-log": "0.0.3"
