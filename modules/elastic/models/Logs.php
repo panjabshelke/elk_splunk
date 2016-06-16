@@ -2,7 +2,7 @@
 
 namespace app\modules\Elastic\models;
 
-use Yii;
+use yii;
 
 /**
  * This is the model class for table "logs".
@@ -12,12 +12,13 @@ use Yii;
  * @property string $description
  * @property string $date
  */
-class Logs extends yii\elasticsearch\ActiveRecord {
+class Logs extends \yii\db\ActiveRecord {
 
     /**
      * @inheritdoc
      */
     public $document;
+
     public static function tableName() {
         return 'logs';
     }
@@ -54,10 +55,9 @@ class Logs extends yii\elasticsearch\ActiveRecord {
 //            ),
 //        );
 //    }
-    public function getData()
-    {
-       
-        return self::find();
+    public function search($params) {
+       $query = yii::$app->db->createCommand('select * from logs')->queryAll();
+ return $query;
     }
 
 }

@@ -8,8 +8,8 @@ class ComposerStaticInit881722bc1b7e37be2e940a6043157b09
 {
     public static $files = array (
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
-        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -25,6 +25,10 @@ class ComposerStaticInit881722bc1b7e37be2e940a6043157b09
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
+        'i' => 
+        array (
+            'index0h\\log\\' => 12,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -32,6 +36,10 @@ class ComposerStaticInit881722bc1b7e37be2e940a6043157b09
         'R' => 
         array (
             'React\\Promise\\' => 14,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
         ),
         'G' => 
         array (
@@ -85,6 +93,10 @@ class ComposerStaticInit881722bc1b7e37be2e940a6043157b09
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
+        'index0h\\log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/index0h/yii2-log/src',
+        ),
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
@@ -92,6 +104,10 @@ class ComposerStaticInit881722bc1b7e37be2e940a6043157b09
         'React\\Promise\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/promise/src',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'GuzzleHttp\\Stream\\' => 
         array (
