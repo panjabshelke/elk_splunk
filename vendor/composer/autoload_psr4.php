@@ -18,6 +18,7 @@ return array(
     'index0h\\log\\' => array($vendorDir . '/index0h/yii2-log/src'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
     'React\\Promise\\' => array($vendorDir . '/react/promise/src'),
+    'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'GuzzleHttp\\Stream\\' => array($vendorDir . '/guzzlehttp/streams/src'),
     'GuzzleHttp\\Ring\\' => array($vendorDir . '/guzzlehttp/ringphp/src'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
