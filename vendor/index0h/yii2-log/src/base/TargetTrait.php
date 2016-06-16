@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link      https://github.com/index0h/yii2-log
  * @copyright Copyright (c) 2014 Roman Levishchenko <index.0h@gmail.com>
@@ -24,8 +25,8 @@ use yii\log\Logger;
  *
  * @author Roman Levishchenko <index.0h@gmail.com>
  */
-trait TargetTrait
-{
+trait TargetTrait {
+
     /** @var bool Whether to log a message containing the current user name and ID. */
     public $logUser = false;
 
@@ -38,11 +39,9 @@ trait TargetTrait
      * @param array $messages Log messages to be processed.
      * @param bool  $final    Whether this method is called at the end of the current application
      */
-    public function collect($messages, $final)
-    {
+    public function collect($messages, $final) {
         $this->messages = array_merge(
-            $this->messages,
-            $this->filterMessages($messages, $this->getLevels(), $this->categories, $this->except)
+                $this->messages, $this->filterMessages($messages, $this->getLevels(), $this->categories, $this->except)
         );
         $count = count($this->messages);
         if (($count > 0) && (($final == true) || ($this->exportInterval > 0) && ($count >= $this->exportInterval))) {
@@ -59,16 +58,14 @@ trait TargetTrait
      *
      * @return string
      */
-    public function formatMessage($message)
-    {
+    public function formatMessage($message) {
         return json_encode($this->prepareMessage($message));
     }
 
     /**
      * Updates all messages if there are context variables.
      */
-    protected function addContextToMessages()
-    {
+    protected function addContextToMessages() {
         $context = $this->getContextMessage();
 
         if ($context === []) {
@@ -85,8 +82,7 @@ trait TargetTrait
      *
      * @return array
      */
-    protected function getContextMessage()
-    {
+    protected function getContextMessage() {
         $context = $this->context;
 
         if (($this->logUser === true) && ($user = \Yii::$app->get('user', false)) !== null) {
@@ -110,8 +106,7 @@ trait TargetTrait
      *
      * @return array
      */
-    protected function parseText($text)
-    {
+    protected function parseText($text) {
         $type = gettype($text);
         switch ($type) {
             case 'array':
@@ -132,20 +127,14 @@ trait TargetTrait
      *
      * @return array
      */
-    protected function prepareMessage($message)
-    {
-<<<<<<< HEAD
-        print_r($message);die;
-=======
->>>>>>> e40366a3a519f01859103f84ae64139014817b95
+    protected function prepareMessage($message) {
         list($text, $level, $category, $timestamp) = $message;
 
         $level = Logger::getLevelName($level);
         $timestamp = date('c', $timestamp);
 
         $result = ArrayHelper::merge(
-            $this->parseText($text),
-            ['level' => $level, 'category' => $category, '@timestamp' => $timestamp]
+                        $this->parseText($text), ['level' => $level, 'category' => $category, '@timestamp' => $timestamp]
         );
 
         if (isset($message[4]) === true) {
@@ -154,4 +143,5 @@ trait TargetTrait
 
         return $result;
     }
+
 }
