@@ -74,4 +74,13 @@ return array (
       '@yii/elasticsearch' => $vendorDir . '/yiisoft/yii2-elasticsearch',
     ),
   ),
+  'index0h/yii2-log' => 
+  array (
+    'name' => 'index0h/yii2-log',
+    'version' => '0.0.3.0',
+    'alias' => 
+    array (
+      '@index0h/log' => $vendorDir . '/index0h/yii2-log/src',
+    ),
+  ),
 );

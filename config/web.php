@@ -1,12 +1,19 @@
 <?php
 
 $params = require(__DIR__ . '/params.php');
+$modules = require(__DIR__ . '/module.php');
 
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+//        'urlManager' => [
+//            'baseUrl' => '/',
+//            'enablePrettyUrl' => true,
+//            'showScriptName' => false,
+//            'rules' => []
+//        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'sQ0GreDhX4PpqJmbGExZKEYzRsjMR5Jf',
@@ -32,31 +39,31 @@ $config = [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 [
-                    //'class' => 'yii\log\FileTarget',
+                    'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
-                    'class' => 'index0h\\log\\LogstashFileTarget',
-                ],
             ],
+        ],
         ],
         'db' => require(__DIR__ . '/db.php'),
 //        'module' => require(__DIR__ . '/module.php'),
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+//        'urlManager' => [
+//            'showScriptName' => false,
+//            'enablePrettyUrl' => true,
+//            'enableStrictParsing' => false,
+//            'rules' => [
+//                '<controller>/<action>/<id:w+>' => '<controller>/<action>'
+//            ],
+//        ],
         'elasticsearch' => [
             'class' => 'yii\elasticsearch\Connection',
             'nodes' => [
                 ['http_address' => '127.0.0.1:9200'],
-                // configure more hosts if you have a cluster
+            // configure more hosts if you have a cluster
             ],
         ],
     ],
     'params' => $params,
+    'modules' =>$modules,
     
 ];
 
