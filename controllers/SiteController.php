@@ -8,6 +8,9 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use index0h;
+use index0h\log\base;
+use TargetTrait;
 
 class SiteController extends Controller
 {
@@ -49,7 +52,9 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        
+        echo phpinfo();
+        //return $this->render('index');
     }
 
     public function actionLogin()
@@ -93,10 +98,12 @@ class SiteController extends Controller
     }
     public function actionLogstash_demo()
     {
+       $data= new index0h\log\LogstashFileTarget();
+       //$text = "hi error ocour";
+      // $report=  $data->parseText();
+      // echo "<pre>";
+      print_r($data); exit;
         return $this->render('logstash_demo');
     }
-     public function actionElastic()
-    {
-        return $this->render('elastic');
-    }
+    
 }

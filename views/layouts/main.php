@@ -41,7 +41,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Elastic', 'url' => ['site/elastic']],
+            
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Logstash', 'url' => ['/site/logstash_demo']],
 //            ['label' => 'About', 'url' => ['/site/about']],
